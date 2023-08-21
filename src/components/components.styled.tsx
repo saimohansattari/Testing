@@ -47,10 +47,10 @@ export const SearchBtn = styled.button `
 //Menunav 
 
 export const StyledMenuNav = styled.nav `
-width: 100vw;
+/* width: 100vw; */
     /* position: fixed; */
     display: flex;
-    height: 30px;
+    /* height: 30px; */
     flex-wrap: wrap;
     padding: 10px 150px 10px 150px;
     justify-content: space-between;

@@ -8,7 +8,7 @@ function Navbar() {
     <>
        <StyledNavbar>
           <div >
-            <img src={Logo} alt="GetItem_Logo" style={{width: "50px"}}/>
+           <Link to='/'> <img src={Logo} alt="GetItem_Logo" style={{width: "50px"}}/></Link>
           </div>
 
           <div style={{display: "flex", flexWrap: "wrap"}}>

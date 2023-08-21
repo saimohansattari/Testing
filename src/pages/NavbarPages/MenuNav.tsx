@@ -6,6 +6,10 @@ function MenuNav() {
   return (
     <>
     <StyledMenuNav>
+        <Link to='/' >
+          <StyledBtn_Primary>All </StyledBtn_Primary>
+        </Link> 
+
         <Link to='/Grocery' >
           <StyledBtn_Primary>Grocery </StyledBtn_Primary>
         </Link> 

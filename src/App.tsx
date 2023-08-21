@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 // import Mobiles from './pages/MenubarPages/Mobiles'
 import {Grocery, Mobiles, JentsWear, GirlsWear, KidsWear, Electronics, BeautyToys} from './pages/MenubarPages/index.ts'
 import {SignIn, Signup} from './pages/ProfilePages/index.ts'
+import Home from './pages/NavbarPages/Home.tsx'
 
 
 function App() {
@@ -24,7 +25,9 @@ function App() {
     <Router>
       <MenuNav />
       <Routes>
+
         
+        <Route path='/' element={<Home />} />
         <Route path="/Grocery" element={<Grocery />} />
         <Route path="/Mobiles" element={<Mobiles />} />
         <Route path="/JentsWear" element={<JentsWear />} />
@@ -34,6 +37,8 @@ function App() {
         <Route path="/BeautyToys" element={<BeautyToys />} />
       </Routes>
     </Router>
+
+  
       
     </>
   )
