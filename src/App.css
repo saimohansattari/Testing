@@ -61,12 +61,12 @@ hr {
   }
   
   .rating label:last-child .icon {
-    color: rgba(107, 107, 107, 0.753);
+    color:rgba(128, 128, 128, 0.63);
   }
   
   .rating:not(:hover) label input:checked ~ .icon,
   .rating:hover label:hover input ~ .icon {
-    color: rgb(255, 255, 3);
+    color: rgb(255,215,0);
   }
   
   .rating label input:focus:not(:checked) ~ .icon:last-child {

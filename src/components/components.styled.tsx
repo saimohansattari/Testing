@@ -255,6 +255,7 @@ export const ProductCard = styled.div`
 `;
 
 export const ProductImg = styled.img`
+    background-color: white;
     width: 180px;
     height: 16vh;
 `;
@@ -282,6 +283,12 @@ export const ProductWeight = styled.p`
 `;
 
 export const ProductPrice = styled.p`
+    font-size: 17px;
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
+    font-weight: bold;
+    color: #000000dc;
+`
+export const ProCost = styled.p`
     font-size: 17px;
     font-family: "Inter-SemiBold", "Inter", sans-serif;
     font-weight: bold;
