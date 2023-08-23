@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import MenuNav from '../pages/NavbarPages/MenuNav';
+import { WomenShopping } from '../assets/pngs';
 
 
 // Main Navbar
@@ -50,7 +51,7 @@ export const StyledMenuNav = styled.nav `
 /* width: 100vw; */
     /* position: fixed; */
     display: flex;
-    /* height: 30px; */
+    height: 30px;
     flex-wrap: wrap;
     padding: 10px 150px 10px 150px;
     justify-content: space-between;
@@ -161,7 +162,62 @@ export const GoogleBtn = styled.div `
 `;
 
 
+//Home page Components
+export const MainDiv = styled.div`
+    background-color: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 25px 50px 25px 50px; */
+    
+`;
 
+export const SubDiv = styled.div `
+margin-top: 28px;
+display: flex;
+width: 95vw;
+border-radius: 10px;
+background-image: linear-gradient(to right top, #1c1040, #202053, #233065, #254078, #25518a, #355d9c, #4568ae, #5674c0, #7d7bd2, #a680e0, #d084e8, #f986eb);
+gap: 2px;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+    
+`;
+
+export const ImgCard = styled.div `
+   /* width: 40vw; */
+   height: fit-content;
+   background-color: none;
+`;
+export const TextCard = styled.div `
+    background-color: none;
+    padding: 25px 40px 25px 40px;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    
+`;
+
+export const TextS45 = styled.h1 `
+     font-family: "Lucida Handwriting", cursive;
+    font-size: 45px;
+`
+
+export const TextS24 = styled.p`
+    font-family: "Lucida Handwriting", cursive;
+    width: 450px;
+    font-size: 24px;
+    text-align: center;
+`
+
+export const TextS18 = styled.p `
+    font-size: 18px;
+`;
 
 
 
