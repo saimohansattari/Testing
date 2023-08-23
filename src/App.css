@@ -66,7 +66,7 @@ hr {
   
   .rating:not(:hover) label input:checked ~ .icon,
   .rating:hover label:hover input ~ .icon {
-    color: rgb(229, 232, 66);
+    color: rgb(255, 255, 3);
   }
   
   .rating label input:focus:not(:checked) ~ .icon:last-child {
