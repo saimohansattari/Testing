@@ -1,6 +1,4 @@
 import styled from 'styled-components'
-import MenuNav from '../pages/NavbarPages/MenuNav';
-import { WomenShopping } from '../assets/pngs';
 
 
 // Main Navbar
@@ -217,6 +215,81 @@ export const TextS24 = styled.p`
 
 export const TextS18 = styled.p `
     font-size: 18px;
+`;
+
+//MenubarPages Style Components
+
+export const Div = styled.div`
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
+export const StyledDiv1 = styled.div `
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 90vw;
+    background-color: none;
+    padding: 25px;
+    
+`;
+
+export const ProductCard = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 36vh;
+    width: 200px;
+    gap: 1px;
+    background-color: white;
+    border: 1px solid #27252587;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 5px 10px 20px #0f0f0f89;
+    }
+`;
+
+export const ProductImg = styled.img`
+    width: 180px;
+    height: 16vh;
+`;
+
+export const ProductText = styled.div `
+    width: 180px;
+    height: 18vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: white;
+    border-top:1px solid gray;
+    padding-top: 5px;
+`;
+export const ProductName = styled.p`
+    font-size: 15px;
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
+`;
+
+export const ProductWeight = styled.p`
+    font-size: 14px;
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
+    font-weight: 15px;
+    color: gray;
+`;
+
+export const ProductPrice = styled.p`
+    font-size: 17px;
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
+    font-weight: bold;
+`
+
+export const OfferText = styled.p`
+    font-size: 14px;
+    color: green;
 `;
 
 
