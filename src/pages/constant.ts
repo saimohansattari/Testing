@@ -59,6 +59,14 @@ export const grocery = [
         ProWeight: "1",
         ProPrice: "150"
         
+    },
+    {
+        id:"7",
+        Proimg: grocery6,
+        ProName:"Soft Drinks",
+        ProWeight: "1",
+        ProPrice: "150"
+        
     }
 ];
 

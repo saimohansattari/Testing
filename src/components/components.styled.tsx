@@ -165,6 +165,7 @@ export const MainDiv = styled.div`
     background-color: none;
     color: black;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     /* padding: 25px 50px 25px 50px; */
@@ -217,6 +218,50 @@ export const TextS18 = styled.p `
     font-size: 18px;
 `;
 
+
+//Home page Products styled Components
+
+export const ProductScrollDiv = styled.div`
+    width: 95vw;
+    height: 350px;
+    /* background-color: aqua; */
+    padding: 10px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+`;
+
+export const Scroll_1 = styled.div`
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+    gap: 30px;
+    white-space: nowrap;
+    /* background-color: blue; */
+    
+`;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //MenubarPages Style Components
 
 export const Div = styled.div`
@@ -268,7 +313,7 @@ export const ProductText = styled.div `
     gap: 5px;
     background-color: white;
     border-top:1px solid gray;
-    padding-top: 5px;
+    padding: 5px 8px 5px 8px;
 `;
 export const ProductName = styled.p`
     font-size: 15px;
@@ -298,6 +343,8 @@ export const OfferText = styled.p`
     font-size: 14px;
     color: green;
 `;
+
+
 
 
 
