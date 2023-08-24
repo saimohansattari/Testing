@@ -7,7 +7,7 @@ function SignIn() {
         <StyledSignInForm>
             <StyledForm>
               <LoginInput placeholder='Email...' />
-              <PassWordInput placeholder='Password...' />
+              <PassWordInput type='password' placeholder='Password...' />
               <SubmitBtn>Submit</SubmitBtn>
               <hr />
               <OAuth />

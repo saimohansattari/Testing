@@ -8,7 +8,8 @@ function Signup() {
       <StyledSignInForm>
             <StyledForm>
               <LoginInput placeholder='Email...' />
-              <PassWordInput placeholder='Password...' />
+              <PassWordInput type='password' placeholder='Password...' />
+              <PassWordInput type='password' placeholder='Confirm Pass...' />
               <SubmitBtn>Submit</SubmitBtn>
               <hr />
               <OAuth />

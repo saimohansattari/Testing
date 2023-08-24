@@ -1,6 +1,13 @@
 import { grocery1,grocery2,grocery3,grocery4,grocery5,grocery6 } from "../assets/pngs/GroceryPngs"
 import { Ele1,Ele2,Ele3,Ele4,Ele5,Ele6 } from "../assets/pngs/ElectronicsPngs"
 import { Mobile1,Mobile2,Mobile3,Mobile4,Mobile5,Mobile6 } from "../assets/pngs/MobilePngs";
+import { Mens1,Mens2,Mens3,Mens4,Mens5,Mens6 } from "../assets/pngs/MenwearPngs";
+import { Girl1,Girl2,Girl3,Girl4,Girl6,Girl5} from "../assets/pngs/GirlswearPngs";
+import { Kid1,Kid2,Kid3,Kid4,Kid5,Kid6 } from "../assets/pngs/KidswearPngs";
+import { Toy1,Toy2,Toy3,Toy4,Toy5,Toy6 } from "../assets/pngs/Toys";
+
+
+
 
 
 
@@ -145,4 +152,199 @@ export const mobiles = [
         ProWeight: "2.2",
         ProPrice: "12900"
     },
-]
+];
+
+export const menswear = [
+    {
+        id:"1",
+        Proimg: Mens1,
+        ProName:"Air Pods",
+        ProWeight: "2.2",
+        ProPrice: "12900"
+    },
+    {
+        id:"2",
+        Proimg: Mens2,
+        ProName:"Air Pods",
+        ProWeight: "2.2",
+        ProPrice: "12900"
+    },
+    {
+        id:"3",
+        Proimg: Mens3,
+        ProName:"Air Pods",
+        ProWeight: "2.2",
+        ProPrice: "12900"
+    },
+    {
+        id:"4",
+        Proimg: Mens4,
+        ProName:"Air Pods",
+        ProWeight: "2.2",
+        ProPrice: "12900"
+    },
+    {
+        id:"5",
+        Proimg: Mens5,
+        ProName:"Air Pods",
+        ProWeight: "2.2",
+        ProPrice: "12900"
+    },
+    {
+        id:"6",
+        Proimg: Mens6,
+        ProName:"Air Pods",
+        ProWeight: "2.2",
+        ProPrice: "12900"
+    },
+];
+
+
+export const girlswear = [
+    {
+        id:"1",
+        Proimg: Girl1,
+        ProName:"Air Pods",
+        ProWeight: "2.2",
+        ProPrice: "12900"
+    },
+    {
+        id:"2",
+        Proimg: Girl2,
+        ProName:"Air Pods",
+        ProWeight: "2.2",
+        ProPrice: "12900"
+    },
+    {
+        id:"3",
+        Proimg: Girl3,
+        ProName:"Air Pods",
+        ProWeight: "2.2",
+        ProPrice: "12900"
+    },
+    {
+        id:"4",
+        Proimg: Girl4,
+        ProName:"Air Pods",
+        ProWeight: "2.2",
+        ProPrice: "12900"
+    },
+    {
+        id:"5",
+        Proimg: Girl5,
+        ProName:"Air Pods",
+        ProWeight: "2.2",
+        ProPrice: "12900"
+    },
+    {
+        id:"6",
+        Proimg: Girl6,
+        ProName:"Air Pods",
+        ProWeight: "2.2",
+        ProPrice: "12900"
+    },
+    {
+        id:"7",
+        Proimg: Girl4,
+        ProName:"Air Pods",
+        ProWeight: "2.2",
+        ProPrice: "12900"
+    },
+];
+
+
+
+export const kidswear = [
+    {
+        id:"1",
+        Proimg: Kid1,
+        ProName:"Air Pods",
+        ProWeight: "2.2",
+        ProPrice: "12900"
+    },
+    {
+        id:"2",
+        Proimg: Kid2,
+        ProName:"Air Pods",
+        ProWeight: "2.2",
+        ProPrice: "12900"
+    },
+    {
+        id:"3",
+        Proimg: Kid3,
+        ProName:"Air Pods",
+        ProWeight: "2.2",
+        ProPrice: "12900"
+    },
+    {
+        id:"4",
+        Proimg: Kid4,
+        ProName:"Air Pods",
+        ProWeight: "2.2",
+        ProPrice: "12900"
+    },
+    {
+        id:"5",
+        Proimg: Kid5,
+        ProName:"Air Pods",
+        ProWeight: "2.2",
+        ProPrice: "12900"
+    },
+    {
+        id:"6",
+        Proimg: Kid6,
+        ProName:"Air Pods",
+        ProWeight: "2.2",
+        ProPrice: "12900"
+    },
+   
+];
+
+
+
+
+export const toys = [
+    {
+        id:"1",
+        Proimg: Toy1,
+        ProName:"Air Pods",
+        ProWeight: "2.2",
+        ProPrice: "12900"
+    },
+    {
+        id:"2",
+        Proimg: Toy2,
+        ProName:"Air Pods",
+        ProWeight: "2.2",
+        ProPrice: "12900"
+    },
+    {
+        id:"3",
+        Proimg: Toy3,
+        ProName:"Air Pods",
+        ProWeight: "2.2",
+        ProPrice: "12900"
+    },
+    {
+        id:"4",
+        Proimg: Toy4,
+        ProName:"Air Pods",
+        ProWeight: "2.2",
+        ProPrice: "12900"
+    },
+    {
+        id:"5",
+        Proimg: Toy5,
+        ProName:"Air Pods",
+        ProWeight: "2.2",
+        ProPrice: "12900"
+    },
+    {
+        id:"6",
+        Proimg: Toy6,
+        ProName:"Air Pods",
+        ProWeight: "2.2",
+        ProPrice: "12900"
+    },
+   
+];
