@@ -225,7 +225,7 @@ export const ProductScrollDiv = styled.div`
     width: 95vw;
     height: 350px;
     /* background-color: aqua; */
-    padding: 10px;
+    /* padding: 10px; */
     /* background-color: red; */
     display: flex;
     align-items: center;
@@ -235,9 +235,15 @@ export const Scroll_1 = styled.div`
     display: flex;
     overflow-x: scroll;
     width: 100%;
-    gap: 30px;
+    gap: 20px;
     white-space: nowrap;
+    padding: 20px 0px 20px 0px;
     /* background-color: blue; */
+
+
+    &::-webkit-scrollbar {
+    display: none;
+        }
     
 `;
 
