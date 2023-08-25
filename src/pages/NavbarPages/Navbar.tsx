@@ -1,7 +1,6 @@
-import { StyledNavbar, Search, SearchBtn,  StyledBtn_Primary } from '../../components/components.styled';
-import {Logo}  from '../../assets/pngs/index'
+import { StyledNavbar, Search, SearchBtn,  UserIcon } from '../../components/components.styled';
+import {Logo, usericon}  from '../../assets/pngs/index'
 import { Link } from 'react-router-dom';
-
 
 function Navbar() {
   return (
@@ -17,8 +16,8 @@ function Navbar() {
           </div>
 
           <div>
-           <Link to='/SignIn'> <StyledBtn_Primary > SignIn</StyledBtn_Primary> </Link>&nbsp;/&nbsp;
-            <Link to='/Signup'><StyledBtn_Primary >SignUp</StyledBtn_Primary></Link> 
+            
+           <Link to='/SignIn'><UserIcon src={usericon} /></Link>
           </div>
           
           

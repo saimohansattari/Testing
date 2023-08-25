@@ -34,6 +34,11 @@ export const SearchBtn = styled.button `
     }
 `;
 
+export const UserIcon = styled.img`
+    width: 30px;
+    height: 30px;
+`
+
 // export const Anchar  = styled.a `
 //     text-decoration: none;
 //     color: black;
@@ -90,7 +95,7 @@ export const StyledSignInForm = styled.div `
 
 export const StyledForm = styled.form`
     width: 50vw;
-    height: 50vh;
+    height: 60vh;
     gap: 25px;
     background-color: white;
     display: flex;

@@ -1,7 +1,14 @@
-import { StyledSignInForm, LoginInput, StyledForm, PassWordInput, SubmitBtn } from '../../components/components.styled';
+import { StyledSignInForm, LoginInput, StyledForm, PassWordInput, SubmitBtn, StyledBtn_Primary } from '../../components/components.styled';
+import { Link } from 'react-router-dom';
 import OAuth from '../../components/OAuth';
 
 function SignIn() {
+ 
+
+
+
+
+
   return (
     <div>
         <StyledSignInForm>
@@ -10,6 +17,8 @@ function SignIn() {
               <PassWordInput type='password' placeholder='Password...' />
               <SubmitBtn>Submit</SubmitBtn>
               <hr />
+              <Link to='/Signup'><StyledBtn_Primary >SignUp</StyledBtn_Primary></Link> 
+                <b>Or</b>
               <OAuth />
 
               
