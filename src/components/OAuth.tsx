@@ -33,7 +33,7 @@ function OAuth() {
               timestamp: serverTimestamp()
             })
           }
-          navigate('/')
+          navigate('/');
         } catch (error) {
           console.log("there is a error in authentication!")
         }
