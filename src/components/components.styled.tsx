@@ -174,6 +174,7 @@ export const GoogleBtn = styled.div `
 //Home page Components
 export const MainDiv = styled.div`
 /* margin-top: 150px; */
+    /* padding-top: 150px; */
     background-color: none;
     color: black;
     display: flex;
@@ -233,11 +234,9 @@ export const TextS18 = styled.p `
 //Home page Products styled Components
 
 export const ProductScrollDiv = styled.div`
-    width: 95vw;
+    width: 85vw;
     height: 350px;
     /* background-color: aqua; */
-    /* padding: 10px; */
-    /* background-color: red; */
     display: flex;
     align-items: center;
 `;
@@ -289,12 +288,12 @@ export const Div = styled.div`
 `;
 
 export const StyledDiv1 = styled.div `
+    padding-top: 170px;
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
-    width: 90vw;
+    width: 87vw;
     background-color: none;
-    padding: 25px;
     
 `;
 

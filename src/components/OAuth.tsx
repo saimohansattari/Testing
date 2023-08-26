@@ -21,13 +21,15 @@ function OAuth() {
           const result = await signInWithPopup(auth, provider)
           const user = result.user
 
+          console.log({user})
           // check for user
           const docRef = doc(db, 'users', user.uid)
           const docSnap = await getDoc(docRef)
-          
+          console.log({docSnap})
           // if user dosen't exist, create user
           if(!docSnap.exists()) {
-            await setDoc(doc(db, 'users, user.uid'), {
+            console.log("inside if")
+            await setDoc(doc(db, 'users', user.uid), {
               name: user.displayName,
               email: user.email,
               timestamp: serverTimestamp()
