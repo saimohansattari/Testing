@@ -3,14 +3,17 @@ import styled from 'styled-components'
 
 // Main Navbar
 export const StyledNavbar = styled.nav `
+    z-index: 1;
+    position: fixed;
+    width: 100vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 20px 50px 20px 50px;
+    padding: 20px 0px 20px 0px;
     background-color: #2468a2;
 `
 export const Search = styled.input `
-    width : 30vw;
+    width : 25vw;
     height: 40px;
     padding: 5px 10px 5px 10px;
     border: none;
@@ -20,7 +23,7 @@ export const Search = styled.input `
 export const SearchBtn = styled.button `
  font-family: "Inter-SemiBold", "Inter", sans-serif;
     font-size: 14px;
-    width: 100px;
+    width: 80px;
     height: 50px;
     cursor: pointer;
     border: none;
@@ -51,13 +54,15 @@ export const UserIcon = styled.img`
 //Menunav 
 
 export const StyledMenuNav = styled.nav `
-/* width: 100vw; */
-    /* position: fixed; */
+    z-index: 1;
+    margin-top: 100px;
+    width: 100vw;
+    position: fixed;
     display: flex;
     height: 30px;
     flex-wrap: wrap;
-    padding: 10px 150px 10px 150px;
-    justify-content: space-between;
+    padding: 10px 0px 10px 0px;
+    justify-content: space-around;
     align-items: center;
     background-color: white;
     border-bottom: 1px solid gray;
@@ -81,13 +86,14 @@ export const StyledBtn_Primary = styled.button `
 
 //SignIn 
 export const StyledSignInForm = styled.div `
+
     font-family: "Inter-SemiBold", "Inter", sans-serif;
     font-size: 15px;
     display: flex;
     justify-content: center;
     width: 100vw;
     height: 80vh;
-    padding-top: 50px;
+    padding-top: 150px;
     background-color: transparent;
     z-index: 1;
     
@@ -167,14 +173,14 @@ export const GoogleBtn = styled.div `
 
 //Home page Components
 export const MainDiv = styled.div`
+/* margin-top: 150px; */
     background-color: none;
     color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* padding: 25px 50px 25px 50px; */
-    
+    padding-top : 135px ;
 `;
 
 export const SubDiv = styled.div `
