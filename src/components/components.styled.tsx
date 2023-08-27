@@ -40,15 +40,7 @@ export const SearchBtn = styled.button `
 export const UserIcon = styled.img`
     width: 30px;
     height: 30px;
-`
-
-// export const Anchar  = styled.a `
-//     text-decoration: none;
-//     color: black;
-//     font-family: "Inter-SemiBold", "Inter", sans-serif;
-//     font-size: 16px;
-//     cursor: pointer;
-// `
+`;
 
 
 //Menunav 
@@ -69,7 +61,6 @@ export const StyledMenuNav = styled.nav `
 `;
 
 export const StyledBtn_Primary = styled.button `
-    /* width: 100px; */
     cursor: pointer;
     color: black;
     background-color: transparent;
