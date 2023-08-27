@@ -86,7 +86,6 @@ export const StyledBtn_Primary = styled.button `
 
 //SignIn 
 export const StyledSignInForm = styled.div `
-
     font-family: "Inter-SemiBold", "Inter", sans-serif;
     font-size: 15px;
     display: flex;
@@ -173,8 +172,6 @@ export const GoogleBtn = styled.div `
 
 //Home page Components
 export const MainDiv = styled.div`
-/* margin-top: 150px; */
-    /* padding-top: 150px; */
     background-color: none;
     color: black;
     display: flex;
@@ -198,7 +195,6 @@ align-items: center;
 `;
 
 export const ImgCard = styled.div `
-   /* width: 40vw; */
    height: fit-content;
    background-color: none;
 `;
@@ -236,7 +232,6 @@ export const TextS18 = styled.p `
 export const ProductScrollDiv = styled.div`
     width: 85vw;
     height: 350px;
-    /* background-color: aqua; */
     display: flex;
     align-items: center;
 `;
@@ -248,8 +243,6 @@ export const Scroll_1 = styled.div`
     gap: 20px;
     white-space: nowrap;
     padding: 20px 0px 20px 0px;
-    /* background-color: blue; */
-
 
     &::-webkit-scrollbar {
     display: none;
