@@ -4,7 +4,7 @@ import styled from 'styled-components'
 // Main Navbar
 export const StyledNavbar = styled.nav `
     z-index: 1;
-    position: fixed;
+    /* position: fixed; */
     width: 100vw;
     display: flex;
     justify-content: space-around;
@@ -49,7 +49,7 @@ export const StyledMenuNav = styled.nav `
     z-index: 1;
     margin-top: 100px;
     width: 100vw;
-    position: fixed;
+    /* position: fixed; */
     display: flex;
     height: 30px;
     flex-wrap: wrap;

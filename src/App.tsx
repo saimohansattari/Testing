@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 // import Grocery from './pages/MenubarPages/Grocery';
 // import Mobiles from './pages/MenubarPages/Mobiles'
 import {Grocery, Mobiles, JentsWear, GirlsWear, KidsWear, Electronics, BeautyToys} from './pages/MenubarPages/index.ts'
-import {SignIn, Signup} from './pages/ProfilePages/index.ts'
+import {SignIn, Signup, UserDashboard, PrivateRoute} from './pages/ProfilePages/index.ts'
 import Home from './pages/NavbarPages/Home.tsx'
 
 
@@ -16,6 +16,7 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
+        
         <Route path='/SignIn' element={<SignIn />} />
         <Route path='/Signup' element={<Signup />} />
       </Routes>
@@ -25,6 +26,10 @@ function App() {
     <Router>
       <MenuNav />
       <Routes>
+
+        <Route path='/UserDashboard' element={<PrivateRoute />} >
+            <Route path='/UserDashboard' element={<UserDashboard />} />
+        </Route>
 
         
         <Route path='/' element={<Home />} />
