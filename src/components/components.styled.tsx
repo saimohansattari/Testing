@@ -80,17 +80,34 @@ export const StyledBtn_Primary = styled.button `
 export const StyledBtn_Secondary = styled.button`
     font-family: "Inter-SemiBold", "Inter", sans-serif;
     cursor: pointer;
-    color: black;
+    color: red;
     background-color: transparent;
     font-size: 18px;
     padding: 5px;
     border: none;
 
     &:hover {
-        border-bottom: 2px solid #3973a5;
+        color: black;
+        /* border-bottom: 2px solid #3973a5; */
       
     }
 `;
+
+export const StyledBtn1 = styled.button`
+    color: black;
+    width: 150px;
+    padding: 15px;
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        border: 1px solid #2468a2;
+        border-radius: 5px;
+    }
+`
 
 
 
@@ -389,6 +406,9 @@ export const StyledDashBoard = styled.div`
     width: 75vw;
     border: 0.1px solid gray;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
 `;
 
 export const NameBox = styled.div`
@@ -410,18 +430,27 @@ export const LogOutText = styled.div`
 `;
 
 export const SellDiv = styled.div`
-    margin-top: 30px;
     padding: 13px 15px 13px 15px;
     width: 250px;
     border: 1px solid gray;
     border-radius: 10px;
     font-size: 18px;
     cursor: pointer;
+    color: black;
 
     &:hover {
-        box-shadow : 2px 8px 20px #0f0f0f89
+
+        box-shadow : 5px 10px 20px #0f0f0f86
     }
-`
+`;
+
+export const ContentDiv = styled.div`
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px 0px 100px;
+`;
+
+
 
 
 

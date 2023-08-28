@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import {Grocery, Mobiles, JentsWear, GirlsWear, KidsWear, Electronics, BeautyToys} from './pages/MenubarPages/index.ts'
 import {SignIn, Signup, UserDashboard, PrivateRoute} from './pages/ProfilePages/index.ts'
 import Home from './pages/NavbarPages/Home.tsx'
+import { Cart, SellProductForm } from './pages/ProductPages/index.ts'
 
 
 function App() {
@@ -31,6 +32,8 @@ function App() {
             <Route path='/UserDashboard' element={<UserDashboard />} />
         </Route>
 
+        <Route path='/SellProductForm' element={<SellProductForm />} />
+        <Route path='/Cart' element={<Cart />} />
         
         <Route path='/' element={<Home />} />
         <Route path="/Grocery" element={<Grocery />} />
