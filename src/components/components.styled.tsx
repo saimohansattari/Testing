@@ -60,6 +60,8 @@ export const StyledMenuNav = styled.nav `
     border-bottom: 1px solid gray;
 `;
 
+//Buttons Styled Components
+
 export const StyledBtn_Primary = styled.button `
     cursor: pointer;
     color: black;
@@ -75,9 +77,25 @@ export const StyledBtn_Primary = styled.button `
     }
 `;
 
+export const StyledBtn_Secondary = styled.button`
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
+    cursor: pointer;
+    color: black;
+    background-color: transparent;
+    font-size: 18px;
+    padding: 5px;
+    border: none;
+
+    &:hover {
+        border-bottom: 2px solid #3973a5;
+      
+    }
+`;
+
+
+
 //SignIn 
 export const StyledSignInForm = styled.div `
-    font-family: "Inter-SemiBold", "Inter", sans-serif;
     font-size: 15px;
     display: flex;
     justify-content: center;
@@ -225,6 +243,7 @@ export const TextS24 = styled.p`
 
 export const TextS17 =styled.p`
     font-size: 17px;
+    color: gray;
 `
 
 export const TextS18 = styled.p `
@@ -292,7 +311,7 @@ export const StyledDiv1 = styled.div `
     width: 87vw;
     justify-content: center;
     background-color: none;
-    background-color: skyblue;
+    /* background-color: skyblue; */
     
 `;
 
@@ -364,21 +383,44 @@ export const OfferText = styled.p`
 
 // UserDashboard Styled components
 export const StyledDashBoard = styled.div`
-    background-color: antiquewhite;
+    margin-top: 40px;
+    padding: 30px;
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
     width: 75vw;
+    border: 0.1px solid gray;
+    border-radius: 5px;
 `;
 
 export const NameBox = styled.div`
     display: flex;
+    align-items: center;
     justify-content: space-between;
 `;
 
 export const UserNameText = styled.div `
+display: flex;
+gap: 2px;
+flex-direction: column;
+align-items: center;
     
 `;
 
 export const LogOutText = styled.div`
-    
+
+`;
+
+export const SellDiv = styled.div`
+    margin-top: 30px;
+    padding: 13px 15px 13px 15px;
+    width: 250px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow : 2px 8px 20px #0f0f0f89
+    }
 `
 
 

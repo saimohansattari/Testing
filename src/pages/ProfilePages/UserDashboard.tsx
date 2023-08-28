@@ -1,4 +1,4 @@
-import { LogOutText, NameBox, StyledDashBoard, StyledDiv1, TextS17, TextS23, UserNameText } from "../../components/components.styled"
+import { LogOutText, NameBox,  SellDiv,  StyledBtn_Secondary, StyledDashBoard, StyledDiv1, TextS17, TextS23, UserNameText } from "../../components/components.styled"
 
 
 
@@ -13,10 +13,14 @@ function UserDashboard() {
             <TextS17>chinnasattari@gmail.com</TextS17>
           </UserNameText>
           <LogOutText>
-            <TextS23>Logout</TextS23>
+            <StyledBtn_Secondary>LogOut⏩ </StyledBtn_Secondary>
           </LogOutText>
           
         </NameBox>
+
+        <SellDiv>
+          Sell Your Own Product 🌟
+        </SellDiv>
       </StyledDashBoard>
 
       
