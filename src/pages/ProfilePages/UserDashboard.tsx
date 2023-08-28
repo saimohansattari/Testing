@@ -1,7 +1,14 @@
+import { StyledDiv1 } from "../../components/components.styled"
+
+
 
 function UserDashboard() {
   return (
-    <div>hello this is dashboard</div>
+    <StyledDiv1>
+      hello this is dashboard
+
+      
+    </StyledDiv1>
   )
 }
 
