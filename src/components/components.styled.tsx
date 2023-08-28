@@ -201,10 +201,20 @@ export const TextCard = styled.div `
     
 `;
 
+
+
+//Text Styled Components
+
 export const TextS45 = styled.h1 `
      font-family: "Lucida Handwriting", cursive;
     font-size: 45px;
-`
+`;
+
+export const TextS23 = styled.p`
+    font-size: 24px;
+    text-align: center;
+`;
+
 
 export const TextS24 = styled.p`
     font-family: "Lucida Handwriting", cursive;
@@ -213,9 +223,22 @@ export const TextS24 = styled.p`
     text-align: center;
 `
 
+export const TextS17 =styled.p`
+    font-size: 17px;
+`
+
 export const TextS18 = styled.p `
     font-size: 18px;
 `;
+
+
+
+
+
+
+
+
+
 
 
 //Home page Products styled Components
@@ -252,16 +275,6 @@ export const Scroll_1 = styled.div`
 
 
 
-
-
-
-
-
-
-
-
-
-
 //MenubarPages Style Components
 
 export const Div = styled.div`
@@ -277,7 +290,9 @@ export const StyledDiv1 = styled.div `
     flex-wrap: wrap;
     gap: 25px;
     width: 87vw;
+    justify-content: center;
     background-color: none;
+    background-color: skyblue;
     
 `;
 
@@ -343,6 +358,28 @@ export const OfferText = styled.p`
     font-size: 14px;
     color: green;
 `;
+
+
+
+
+// UserDashboard Styled components
+export const StyledDashBoard = styled.div`
+    background-color: antiquewhite;
+    width: 75vw;
+`;
+
+export const NameBox = styled.div`
+    display: flex;
+    justify-content: space-between;
+`;
+
+export const UserNameText = styled.div `
+    
+`;
+
+export const LogOutText = styled.div`
+    
+`
 
 
 
