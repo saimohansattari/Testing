@@ -16,17 +16,15 @@ function App() {
     <>
     <Router>
       <Navbar />
-      <Routes>
-        
-        <Route path='/SignIn' element={<SignIn />} />
-        <Route path='/Signup' element={<Signup />} />
-      </Routes>
     </Router>
     
     
     <Router>
       <MenuNav />
       <Routes>
+
+        <Route path='/SignIn' element={<SignIn />} />
+        <Route path='/Signup' element={<Signup />} />
 
         <Route path='/UserDashboard' element={<PrivateRoute />} >
             <Route path='/UserDashboard' element={<UserDashboard />} />

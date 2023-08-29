@@ -118,7 +118,7 @@ export const StyledSignInForm = styled.div `
     justify-content: center;
     width: 100vw;
     height: 80vh;
-    padding-top: 150px;
+    padding-top: 170px;
     background-color: transparent;
     z-index: 1;
     
@@ -446,6 +446,7 @@ export const SellDiv = styled.div`
 
 export const ContentDiv = styled.div`
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 0px 100px 0px 100px;
 `;
