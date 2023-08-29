@@ -1,7 +1,6 @@
 import { StyledSignInForm, LoginInput, StyledForm, PassWordInput, SubmitBtn } from '../../components/components.styled';
 import OAuth from '../../components/OAuth';
 import { useState } from 'react';
-import {db} from '../../firebase.config'
 
 
 
@@ -11,15 +10,17 @@ function Signup() {
   const[email, setEmail] = useState("")
   const[password, setPassword] = useState("")
   const[submit, setSubmit] = useState([])
+  
 
-  const onSubmit = (e) => {
+  const onSubmit = (e: React.ChangeEvent<HTMLInputElement>) => {
       e.preventDefault()
 
       const newData = {
           name: name,
           email: email,
           password: password,
-      }
+      }  as { name: string; email: string; password: string };
+
 
       setSubmit([...submit,newData])
 
