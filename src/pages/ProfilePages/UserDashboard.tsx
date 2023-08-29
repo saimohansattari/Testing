@@ -1,7 +1,7 @@
 import { ContentDiv, LogOutText, NameBox,  SellDiv,  StyledBtn1,  StyledBtn_Secondary, StyledDashBoard, StyledDiv1, TextS17, TextS23, UserNameText } from "../../components/components.styled"
 import { Link, useNavigate } from "react-router-dom"
 import { getAuth } from "firebase/auth"
-import { useState } from 'react';
+import { useState, } from 'react';
 
 function UserDashboard() {
   const navigate = useNavigate()
@@ -26,6 +26,7 @@ function UserDashboard() {
     }))
 
   }
+
 
   return (
     <div style={{display:"flex", justifyContent:"center"}}>

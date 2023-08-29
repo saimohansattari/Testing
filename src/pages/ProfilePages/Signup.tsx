@@ -2,6 +2,11 @@ import { StyledSignInForm, LoginInput, StyledForm, PassWordInput, SubmitBtn } fr
 import OAuth from '../../components/OAuth';
 import { useState } from 'react';
 
+interface UserData {
+  name: string;
+  email: string;
+  password: string;
+}
 
 
 
@@ -9,17 +14,17 @@ function Signup() {
   const[name, setName] = useState("")
   const[email, setEmail] = useState("")
   const[password, setPassword] = useState("")
-  const[submit, setSubmit] = useState([])
+  const[submit, setSubmit] = useState<UserData[]>([]);
   
 
-  const onSubmit = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault()
 
-      const newData = {
+      const newData: UserData = {
           name: name,
           email: email,
           password: password,
-      }  as { name: string; email: string; password: string };
+      }  
 
 
       setSubmit([...submit,newData])
