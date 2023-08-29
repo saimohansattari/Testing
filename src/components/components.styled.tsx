@@ -452,6 +452,39 @@ export const ContentDiv = styled.div`
 `;
 
 
+//Selling Product page styled component
+export const StyledPro_Form = styled.form`
+    width: 50vw;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+
+`
+export const FormLable = styled.p`
+    font-size: 14px;
+`
+
+export const StyledInput1 = styled.input`
+    width: 400px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+`;
+
+export const StyledDropdownInput = styled.select`
+     width: 400px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+` 
+
+
 
 
 
