@@ -439,7 +439,6 @@ export const SellDiv = styled.div`
     color: black;
 
     &:hover {
-
         box-shadow : 5px 10px 20px #0f0f0f86
     }
 `;
@@ -454,6 +453,10 @@ export const ContentDiv = styled.div`
 
 //Selling Product page styled component
 export const StyledPro_Form = styled.form`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
     width: 50vw;
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -463,6 +466,12 @@ export const StyledPro_Form = styled.form`
 export const FormLable = styled.p`
     font-size: 14px;
 `
+
+export const StyledInputDiv = styled.div`
+    width: 400px;
+    background-color: none;
+    padding: 15px 0px;
+`;
 
 export const StyledInput1 = styled.input`
     width: 400px;
@@ -474,6 +483,22 @@ export const StyledInput1 = styled.input`
     box-sizing: border-box; 
 `;
 
+export const StyledSubmitBtn = styled.button`
+    width: 400px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #272626;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    cursor: pointer;
+
+    &:hover {
+        background-color: #285983e0;
+        color: white;
+    }
+`;
+
 export const StyledDropdownInput = styled.select`
      width: 400px;
     padding: 12px 20px;
@@ -482,7 +507,7 @@ export const StyledDropdownInput = styled.select`
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box; 
-` 
+`;
 
 
 
