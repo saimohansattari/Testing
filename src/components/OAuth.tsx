@@ -28,7 +28,6 @@ function OAuth() {
           console.log({docSnap})
           // if user dosen't exist, create user
           if(!docSnap.exists()) {
-            console.log("inside if")
             await setDoc(doc(db, 'users', user.uid), {
               name: user.displayName,
               email: user.email,
