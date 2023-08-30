@@ -1,4 +1,4 @@
-import { FormLable,  StyledDiv1, StyledDropdownInput, StyledInput1, StyledSubmitBtn, StyledPro_Form, StyledGap, StyledInputDiv,  } from "../../components/components.styled"
+import { FormLable,  StyledDiv1, StyledDropdownInput, StyledInput1, StyledSubmitBtn, StyledPro_Form, StyledInputDiv,  } from "../../components/components.styled"
 import { useState } from 'react';
 import { db } from "../../firebase.config";
 
@@ -9,9 +9,9 @@ function SellProductForm() {
   const [weight, setWeight] = useState('');
   const [price, setPrice] = useState('');
   const [ offer, setOffer] = useState('');
-  const [image, setImage] = useState([]);
+  const [image, setImage] = useState<any>([]);
 
-  const handleFileChange = (event) => {
+  const handleFileChange = (event: { target: { files: any; }; }) => {
     const files = event.target.files;
     setImage([...image, ...files]);
   };
