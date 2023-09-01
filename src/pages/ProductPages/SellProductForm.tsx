@@ -1,6 +1,8 @@
 import { FormLable,  StyledDiv1, StyledDropdownInput, StyledInput1, StyledSubmitBtn, StyledPro_Form, StyledInputDiv,  } from "../../components/components.styled"
-import { useState } from 'react';
-import { db } from "../../firebase.config";
+import { useState, useEffect, useRef } from 'react';
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import {getStorage, ref, uploadBytesResumable, getDownloadURL} from 'firebase/storage'
+
 
 
 
@@ -16,12 +18,10 @@ function SellProductForm() {
     setImage([...image, ...files]);
   };
 
-  const onSubmit = (e) => {
+  const onSubmit = (e: { preventDefault: () => void; }) => {
       e.preventDefault();
 
       // db.collection()
-
-
   }
 
 
