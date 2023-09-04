@@ -1,7 +1,8 @@
 import { FormLable,  StyledDiv1, StyledDropdownInput, StyledInput1, StyledSubmitBtn, StyledPro_Form, StyledInputDiv,  } from "../../components/components.styled"
-import { useState } from 'react';
-import { getAuth } from "firebase/auth";
-
+import { useEffect, useRef, useState } from 'react';
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
+// import { getStorage, ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
 
 
 function SellProductForm() {
@@ -19,6 +20,7 @@ function SellProductForm() {
     weight: '',
     price: '',
     offer: '',
+    useRef:''
   })
 
   const {
@@ -36,6 +38,16 @@ function SellProductForm() {
   } = formData
 
   const auth = getAuth()
+  const navigate = useNavigate()
+  const isMounted = useRef(true)
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if(user) {
+        setFormData({ ...formData, userRef:user.uid })
+      }
+    })
+  })
 
 
   const onMutate = (e: any)=> {
