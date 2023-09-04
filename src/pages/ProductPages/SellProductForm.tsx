@@ -57,6 +57,7 @@ function SellProductForm() {
     others,
     weight,
     price,
+    offer,
   } = formData
 
 
