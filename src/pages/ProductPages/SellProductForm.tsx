@@ -11,26 +11,7 @@ import { grocery, mobiles, menswear, girlswear, kidswear, electronics } from '..
 
 
 function SellProductForm() {
-  // const [name, setName] = useState('');
-  // const [weight, setWeight] = useState('');
-  // const [price, setPrice] = useState('');
-  // const [ offer, setOffer] = useState('');
-  // const [image, setImage] = useState<any>([]);
 
-
-
-  // const handleFileChange = (event: { target: { files: any; }; }) => {
-  //   const files = event.target.files;
-  //   setImage([...image, ...files]);
-  // };
-
-  // const onSubmit = (e: { preventDefault: () => void; }) => {
-  //     e.preventDefault();
-
-  //     db.collection("listings").add({
-
-  //     })
-  // }
 
   const [formData, setFormData] = useState({
     name: '',
