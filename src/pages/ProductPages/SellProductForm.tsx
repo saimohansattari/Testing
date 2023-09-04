@@ -1,12 +1,6 @@
 import { FormLable,  StyledDiv1, StyledDropdownInput, StyledInput1, StyledSubmitBtn, StyledPro_Form, StyledInputDiv,  } from "../../components/components.styled"
 import { useState } from 'react';
-import {  collection, getFirestore } from 'firebase/firestore';
-// import { getAuth, onAuthStateChanged } from "firebase/auth";
-// import {getStorage, ref, uploadBytesResumable, getDownloadURL} from 'firebase/storage'
-import { db } from "../../firebase.config";
-// import { useNavigate } from "react-router-dom";
-// import {v4 as uuidv4 } from 'uuid'
-import { grocery, mobiles, menswear, girlswear, kidswear, electronics } from '../constant';
+import { getAuth } from "firebase/auth";
 
 
 
@@ -40,6 +34,8 @@ function SellProductForm() {
     price,
     offer,
   } = formData
+
+  const auth = getAuth()
 
 
   const onMutate = (e: any)=> {
