@@ -2,14 +2,15 @@ import { FormLable,  StyledDiv1, StyledDropdownInput, StyledInput1, StyledSubmit
 import { useEffect, useRef, useState } from 'react';
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
-// import { getStorage, ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
-
+import { getDownloadURL, getStorage, ref, uploadBytesResumable } from 'firebase/storage';
+import {v4 as uuidv4} from 'uuid'
 
 function SellProductForm() {
 
 
   const [formData, setFormData] = useState({
     name: '',
+    images: {},
     grocery: '',
     mobiles: '',
     menswear:'',
@@ -20,11 +21,12 @@ function SellProductForm() {
     weight: '',
     price: '',
     offer: '',
-    useRef:''
+    userRef:''
   })
 
   const {
     name,
+    images,
     grocery,
     mobiles,
     menswear,
@@ -41,13 +43,78 @@ function SellProductForm() {
   const navigate = useNavigate()
   const isMounted = useRef(true)
 
+
   useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
-      if(user) {
-        setFormData({ ...formData, userRef:user.uid })
-      }
-    })
-  })
+    if (isMounted) {
+      onAuthStateChanged(auth, (user) => {
+        if (user) {
+          setFormData({ ...formData, userRef: user.uid })
+        } else {
+          navigate('/Signin')
+        }
+      })
+    }
+
+    return () => {
+      isMounted.current = false
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isMounted])
+
+  const onSubmit = async (e: { preventDefault: () => void; }) => {
+    e.preventDefault()
+
+    //store images in firebase
+    const storeImage = async (image) => {
+      return new Promise((resolve, reject) => {
+        const storage = getStorage()
+        const fileName = `${auth.currentUser?.uid}-${image.name}-${uuidv4()}`
+
+        const storageRef = ref(storage, 'images/' + fileName)
+
+        const uploadTask = uploadBytesResumable(storageRef, image)
+
+        uploadTask.on(
+          'state_changed',
+          (snapshot) => {
+            const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+            console.log('upalode is ' + progress + '% Done')
+            switch (snapshot.state) {
+              case 'paused' : 
+                console.log ('uploade is paused')
+                break
+              case "running" :
+                console.log('upload is Running') 
+                break
+              default : 
+                break           
+            }
+          },
+          (error) => {
+            reject(error)
+          },
+          () => {
+
+            getDownloadURL(uploadTask.snapshot.ref).then((downloadRUL) => {
+              resolve(downloadRUL)
+            })
+          }
+        )
+      })
+    }
+    
+
+    
+
+  }
+
+
+
+
+
+
+
+
 
 
   const onMutate = (e: any)=> {
