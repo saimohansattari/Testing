@@ -4,6 +4,12 @@ import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { getDownloadURL, getStorage, ref, uploadBytesResumable } from 'firebase/storage';
 import {v4 as uuidv4} from 'uuid'
+import { addDoc, collection, serverTimestamp } from "firebase/firestore";
+import { db } from "../../firebase.config";
+
+
+
+
 
 function SellProductForm() {
 
@@ -65,7 +71,7 @@ function SellProductForm() {
     e.preventDefault()
 
     //store images in firebase
-    const storeImage = async (image) => {
+    const storeImage = async (image : any) => {
       return new Promise((resolve, reject) => {
         const storage = getStorage()
         const fileName = `${auth.currentUser?.uid}-${image.name}-${uuidv4()}`
@@ -110,11 +116,16 @@ function SellProductForm() {
       return
     })
 
-  
+    const formDataCopy = {
+      ...formData,
+      imgUrls,
+      timestamp: serverTimestamp(),
+    }
 
-
-    
-
+    const docRef = await addDoc(collection(db, 'listings'), formDataCopy)
+    console.log('Listing saved in database')
+    navigate(`/category/${formDataCopy}/${docRef.id}`)
+ 
   }
 
 
