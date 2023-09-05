@@ -10,7 +10,7 @@ function SellProductForm() {
 
   const [formData, setFormData] = useState({
     name: '',
-    images: {},
+    images: [],
     grocery: '',
     mobiles: '',
     menswear:'',
@@ -102,7 +102,16 @@ function SellProductForm() {
         )
       })
     }
-    
+
+    const imgUrls = await Promise.all(
+      [...images].map((image) => storeImage(image))
+    ).catch(() => {
+      console.log("images not uploaded")
+      return
+    })
+
+  
+
 
     
 
